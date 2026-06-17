@@ -4,24 +4,26 @@ backend:
   repo: https://github.com/mezishir/TNValleyMRR # Change this to your actual repo
   branch: main # The branch where site files live
 
-# 2. Media Settings: Where images uploaded by the club will be saved
+# 2. Media Settings: Global folder where uploaded layout images go
 media_folder: "images"
 public_folder: "/images"
 
-# 3. Collections: Defines the dashboards the club members will see
+# 3. Collections: This defines the 4 specific management tabs for the club
 collections:
-  - name: "blog" # Used internally by code
-    label: "Layout Blog" # The tab name members click in the dashboard
-    folder: "_posts" # The folder in GitHub where files will be created
-    create: true # Allows members to add new posts
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # How the markdown file will be named
-    fields: # The exact form fields the club members will fill out
+  # --- 1. LAYOUT BLOG TAB ---
+  - name: "blog"
+    label: "Layout Blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - { label: "Post Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Layout Photo", name: "thumbnail", widget: "image" }
       - { label: "Author (Your Name)", name: "author", widget: "string", default: "Club Member" }
       - { label: "Blog Text", name: "body", widget: "markdown" }
 
+  # --- 2. TOWN EVENTS TAB ---
   - name: "events"
     label: "Town Events & Open Houses"
     folder: "_events"
@@ -33,3 +35,27 @@ collections:
       - { label: "Location", name: "location", widget: "string", default: "Clubhouse" }
       - { label: "Event Flyer / Image", name: "image", widget: "image", required: false }
       - { label: "Event Description", name: "body", widget: "markdown" }
+
+  # --- 3. PHOTO GALLERY TAB ---
+  - name: "gallery"
+    label: "Photo Gallery"
+    folder: "_gallery" # Pushes a file per photo to track titles/captions cleanly
+    create: true
+    slug: "photo-{{uuid}}"
+    fields:
+      - { label: "Upload Photo", name: "image", widget: "image" }
+      - { label: "Short Caption / Description", name: "title", widget: "string", placeholder: "e.g., Norfolk & Western hauling coal on the lower loop." }
+      - { label: "Date Taken", name: "date", widget: "date", required: false }
+
+  # --- 4. MEMORIAL TAB ---
+  - name: "memorial"
+    label: "Heritage & Legacy on Rails"
+    folder: "_memorial"
+    create: true
+    slug: "memorial-{{slug}}"
+    fields:
+      - { label: "Member's Full Name", name: "title", widget: "string" }
+      - { label: "Year Born", name: "born", widget: "number", value_type: "int" }
+      - { label: "Year Passed", name: "passed", widget: "number", value_type: "int" }
+      - { label: "Photo of Member", name: "member_photo", widget: "image", required: false }
+      - { label: "Their Craftsmanship & Contributions", name: "body", widget: "markdown", placeholder: "Describe what they loved about modeling, parts of the layout they built, or their role in the club crew." }

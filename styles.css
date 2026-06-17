@@ -39,8 +39,33 @@
   font-weight: 900;
   font-style: normal;
 }
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
+
+/* Typography adjustments */
+h1 {
+    font-family: "Protest Strike";
+}
+h2 {
+    font-family: "Cormorant Garamond";
+}
+p {
+    font-family: "Nunito";
+}
+
+#home {
+
+}
+#D8FFCF
+#0D490C
+#8B0000
+#408758
+#FFFAF2
 
 
 

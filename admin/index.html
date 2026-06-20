@@ -4,12 +4,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Website Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1>Tennessee Valley Model Railroaders</h1>
+        <p>Bell Buckle, Tennessee</p>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu ▾</button>
+          <ul id="primary-menu" class="nav-list" role="menu">
+            <li class="nav-item" role="none"><a role="menuitem" href="../index.html#home">Home</a></li>
+            <li class="nav-item" role="none"><a role="menuitem" href="../index.html#legacy">Our Legacy</a></li>
+            <li class="nav-item" role="none"><a role="menuitem" href="../index.html#events">Upcoming Events</a></li>
+            <li class="nav-item" role="none"><a role="menuitem" href="../gallery.html#gallery">Gallery</a></li>
+            <li class="nav-item" role="none"><a role="menuitem" href="../index.html#updates">Latest Updates</a></li>
+            <li class="nav-item" role="none"><a role="menuitem" href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <!-- If using Sveltia CMS (Recommended for 2026): -->
     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
     
     <!-- OR, if you prefer Decap CMS, uncomment the line below instead: -->
     <!-- <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script> -->
+
+    <script src="../main.js" charset="UTF-8"></script>
   </body>
 </html>

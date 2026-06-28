@@ -43,7 +43,11 @@ collections:
     create: true
     slug: "photo-{{uuid}}"
     fields:
-      - { label: "Upload Photo", name: "image", widget: "image" }
+      - label: "Upload Photo"
+        name: "image"
+        widget: "image"
+        media_folder: "/images/gallery"
+        public_folder: "/images/gallery"
       - { label: "Short Caption / Description", name: "title", widget: "string", placeholder: "e.g., Norfolk & Western hauling coal on the lower loop." }
       - { label: "Date Taken", name: "date", widget: "date", required: false }
 

@@ -102,10 +102,13 @@ p {
 #FFFAF2-cream
  */
 .gallery, .heritage {
-  background-color: #D8FFCF;
+  background-color: #FFFAF2;
 }
 #contact {
   background-color: #0D490C;
+}
+.events, .updates, .partners {
+  background-color: #D8FFCF;
 }
 
 
@@ -187,15 +190,42 @@ width: 100%;
   margin: 0 0 1rem;
   line-height: 1.05;
   color: #8B0000;
+  text-shadow:
+    -2px -2px 3px rgba(255, 250, 242, 0.5),
+    2px -2px 3px rgba(255, 250, 242, 0.5),
+    -2px 2px 3px rgba(255, 250, 242, 0.5),
+    2px 2px 3px rgba(255, 250, 242, 0.5),
+    -3px 0 4px rgba(255, 250, 242, 0.3),
+    3px 0 4px rgba(255, 250, 242, 0.3),
+    0 -3px 4px rgba(255, 250, 242, 0.3),
+    0 3px 4px rgba(255, 250, 242, 0.3);
 }
 .hero h2 {
   color: #0D490C;
+  text-shadow:
+    -2px -2px 3px rgba(255, 250, 242, 0.5),
+    2px -2px 3px rgba(255, 250, 242, 0.5),
+    -2px 2px 3px rgba(255, 250, 242, 0.5),
+    2px 2px 3px rgba(255, 250, 242, 0.5),
+    -3px 0 4px rgba(255, 250, 242, 0.3),
+    3px 0 4px rgba(255, 250, 242, 0.3),
+    0 -3px 4px rgba(255, 250, 242, 0.3),
+    0 3px 4px rgba(255, 250, 242, 0.3);
 }
 .hero p {
   max-width: 42rem;
   margin: 0 0 2rem;
   font-size: 1.05rem;
   color: #D8FFCF;
+  text-shadow:
+    -2px -2px 3px rgba(117, 109, 95, 0.5),
+    2px -2px 3px rgba(117, 109, 95, 0.5),
+    -2px 2px 3px rgba(117, 109, 95, 0.5),
+    2px 2px 3px rgba(117, 109, 95, 0.5),
+    -3px 0 4px rgba(117, 109, 95, 0.3),
+    3px 0 4px rgba(117, 109, 95, 0.3),
+    0 -3px 4px rgba(117, 109, 95, 0.3),
+    0 3px 4px rgba(117, 109, 95, 0.3);
 }
 
 .hero-actions {
@@ -214,8 +244,7 @@ width: 100%;
 
 /* Formatting for Blog and Events */
 
-.event-grid,
-.blog-grid {
+.event-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: none;
@@ -223,8 +252,6 @@ width: 100%;
   gap: 20px;
  
 }
-
-.blog-card,
 .event-card {
   background: rgba(255, 255, 255, 0.96);
   border-radius: 20px;
@@ -236,9 +263,7 @@ width: 100%;
   height: 500px;
   overflow: hidden;
 }
-
-.event-image,
-.blog-image {
+.event-image {
   width: 100%;
   height: 250px;
   flex-shrink: 0;
@@ -253,9 +278,7 @@ width: 100%;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
-.event-copy,
-.blog-copy {
+.event-copy {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;

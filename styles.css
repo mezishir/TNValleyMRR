@@ -482,21 +482,7 @@ width: 100%;
 }
 
 
-a:link {
-  background-color: transparent;
-  text-decoration: none;
-  color: #FFFAF2;
-}
-a:hover {
-  background-color: transparent;
-  text-decoration: underline;
-  
-}
-a:visited {
-  color: #FFFAF2;
-  background-color: transparent;
-  text-decoration: none;
-}
+
 
 
 
@@ -568,6 +554,39 @@ a:visited {
 
 
 
+/* URL Link Styling throughout site */
+
+.heritage a:link {
+  background-color: transparent;
+  text-decoration: none;
+  color: #FFFAF2;
+}
+.heritage a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  
+}
+.heritage a:visited {
+  color: #FFFAF2;
+  background-color: transparent;
+  text-decoration: none;
+}
+.site-footer .contact-details a {
+  color:#102c17;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .site-header {
   position: sticky;
@@ -632,44 +651,6 @@ ul {
 
 
 
-
-
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.8rem;
-  margin: 0 0 1.5rem;
-  color: #cbd5e1;
-}
-
-
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.95rem 1.6rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.button:hover {
-  transform: translateY(-1px);
-}
-
-.button-primary {
-  background: #0f766e;
-  color: #ffffff;
-}
-
-.button-secondary {
-  background: rgba(255, 255, 255, 0.16);
-  color: #f8fafc;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-}
 
 
 

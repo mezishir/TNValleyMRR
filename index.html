@@ -133,7 +133,7 @@
       <div class="container memorial">
         <div class="heritage-card">
           <h2>Our Heritage and Legacy on Rails</h2>
-          <p>We want to take time to immortalize some of the club members who are no longer with us. Their friendship and contributions will never be forgotten. Their craftsmanship, friendship, and dedication are woven into every part of our layout.</p><br>
+          <p>We want to take time to immortalize some of the club members who are no longer with us. Their friendship and contributions will never be forgotten.</p><br>
           <p>To our members who have caught the final train home: your companionship and craftsmanship are forever woven into the very fabric of this layout. High green signals and clear tracks ahead, friends. You are deeply missed but always remembered.</p>
         </div>
         <div class="team-back">
@@ -187,7 +187,7 @@
           <h2>Community Partners</h2>
           <p></p>
         </div>
-        <div>
+        <div class="friends">
           <div>
             <h2>Check out our other Awesome Friends!</h2>
           </div>
@@ -204,18 +204,55 @@
 
     <section class="section contact" id="contact">
       <div class="container contact-grid">
-        <div>
-          <div class="section-intro">
-            <h2>Get in Touch Today</h2>
+
+        <div class="contact">
+            <h2>Want to help support us?</h2>
+            <br>
+            <h1>Please consider donating.</h1>
+            <br>
             <p>Donations go back into expanding the club and bringing more joy to the community.</p>
-          </div>
-          
+            <p>We accept cash, checks, and now cards through Zeffy!</p><br>
+            
+            <p>We also accept donations of materials and items we need to expand the layout.</p><br>
           <p>We also have merchandise sold in the clubhouse to help support the club. Stop by and check out our t-shirts, hats, trains, and more!</p>
-        
+          <br>
+          <br>
+          <a href="https://www.zeffy.com/en-US/donation-form/supporting-train-enthusiasts" class="zeffy-button"><img src="./images/68b046acaf3ffdcca102e6a8_zeffy.svg" alt="Zeffy"><span>Donate Here!</span></a>
         </div>
-        <div class="contact-card">
-          <span>QR code or club photo</span>
+
+        <div class="contact-form-section">
+          <h2 class="form-title">We'd love to hear from you! Reach out for any inqueries.</h2>
+          <div class="form-content">
+            <div class="contact-card email">
+              <form>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fname">First name <span class="required">*</span></label>
+                    <input type="text" id="fname" name="fname" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="message">Write a message</label>
+                  <textarea id="message" name="message" placeholder=""></textarea>
+                </div>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+
+            <div class="contact-image">
+              <img src="/images/trainpic.webp" alt="Model train">
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   </main>

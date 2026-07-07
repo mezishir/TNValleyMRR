@@ -224,11 +224,11 @@
           <h2 class="form-title">We'd love to hear from you! Reach out for any inqueries.</h2>
           <div class="form-content">
             <div class="contact-card email">
-              <form>
+              <form id="contact-form" action="https://formspree.io/f/xlgykgdw" method="POST">
                 <div class="form-row">
                   <div class="form-group">
                     <label for="fname">First name <span class="required">*</span></label>
-                    <input type="text" id="fname" name="fname" placeholder="">
+                    <input type="text" id="fname" name="fname" placeholder="" required>
                   </div>
                   <div class="form-group">
                     <label for="lname">Last name</label>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="form-group">
                   <label for="email">Email <span class="required">*</span></label>
-                  <input type="email" id="email" name="email" placeholder="">
+                  <input type="email" id="email" name="email" placeholder="" required>
                 </div>
                 <div class="form-group">
                   <label for="message">Write a message</label>
@@ -245,6 +245,10 @@
                 </div>
                 <input type="submit" value="Submit">
               </form>
+              <div id="success-message" class="success-message" style="display: none;">
+                <h3>Thank you!</h3>
+                <p>Your message has been sent successfully. We'll get back to you soon!</p>
+              </div>
             </div>
 
             <div class="contact-image">

@@ -44,3 +44,37 @@ if (memorialCarousel && memorialPrevButton && memorialNextButton) {
   window.addEventListener("resize", updateCarouselButtons);
   updateCarouselButtons();
 }
+
+// Contact form handling
+const contactForm = document.getElementById("contact-form");
+const successMessage = document.getElementById("success-message");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+      
+      if (response.ok) {
+        // Hide form and show success message
+        contactForm.style.display = "none";
+        successMessage.style.display = "block";
+        
+        // Scroll to success message
+        successMessage.scrollIntoView({ behavior: "smooth" });
+      } else {
+        alert("There was an error sending your message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error sending your message. Please try again.");
+    }
+  });
+}

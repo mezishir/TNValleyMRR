@@ -806,6 +806,26 @@ input[type="submit"]:hover {
   color: #0D490C;
 }
 
+.success-message {
+  text-align: center;
+  padding: 2rem;
+  background-color: #D8FFCF;
+  border-radius: 8px;
+  border: 2px solid #408758;
+}
+
+.success-message h3 {
+  color: #0D490C;
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.success-message p {
+  color: #0D490C;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
 .contact-image {
   flex: 1;
   display: flex;

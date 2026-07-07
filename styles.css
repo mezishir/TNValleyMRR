@@ -73,7 +73,7 @@ h1 {
 h2 {
     font-family: "Cormorant Garamond";
     margin: 0 0 1rem;
-    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-size: 2rem;
     line-height: 1.05;
     color: #408758;
 }
@@ -570,16 +570,19 @@ width: 100%;
   background-color: transparent;
   text-decoration: none;
 }
-.site-footer .contact-details a {
-  color:#102c17;
-  text-decoration: underline;
-}
 .zeffy a:link {
   background-color: transparent;
   text-decoration: none;
   color: #FFFAF2;
 }
-
+.footer-column a {
+  color: #408758;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-column a:hover {
+  text-decoration: underline;
+}
 
 
 
@@ -599,7 +602,6 @@ width: 100%;
 #contact {
   padding: 0px;
   margin: 0px;
-  
 }
 .contact-grid {
   display: flex;
@@ -614,6 +616,9 @@ width: 100%;
 }
 .email {
   background-color: #0D490C;
+}
+#support {
+  font-size: 4rem;
 }
 
 
@@ -900,12 +905,68 @@ input[type="submit"]:hover {
 
 
 
+/* Footer */
+.site-footer {
+  background-color: #FFFAF2;
+  border-top: 3px solid #408758;
+  padding: 3rem 2rem 1rem;
+}
 
+.footer-content {
+  display: flex;
+  gap: 3rem;
+  margin: 10px;
+  border-bottom: 2px solid #D8FFCF;
+  justify-content: space-between;
+}
 
+.footer-column {
+  padding: 30px;
+}
 
+.footer-column h2 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  color: #408758;
+}
 
+.footer-column p {
+  margin: 0.5rem 0;
+  color: #0D490C;
+  font-size: 1.25rem;
+}
 
+.footer-spacer {
+  flex: 0.25;
+}
 
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #0D490C;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .footer-spacer {
+    display: none;
+  }
+  
+  .site-footer {
+    padding: 2rem 1rem 1rem;
+  }
+}
 
 
 
